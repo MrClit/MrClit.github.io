@@ -1,88 +1,73 @@
 
 import { motion } from "framer-motion";
+import { aboutSections } from "../data/about";
 
 const About: React.FC = () => {
-  const sections = [
-    {
-      title: "Experiencia Profesional",
-      content: [
-        "He trabajado como desarrollador frontend durante X años, especializándome en la creación de interfaces de usuario modernas y responsivas.",
-        "He participado en proyectos que van desde aplicaciones web a pequeña escala hasta soluciones empresariales complejas.",
-        "Mi experiencia incluye trabajo con equipos multidisciplinarios siguiendo metodologías ágiles."
-      ]
-    },
-    {
-      title: "Formación Académica",
-      content: [
-        "Graduado en [Tu Carrera] por la [Universidad]",
-        "Cursos especializados en desarrollo web y tecnologías frontend",
-        "Certificaciones en tecnologías relevantes"
-      ]
-    },
-    {
-      title: "Habilidades Técnicas",
-      content: [
-        "Desarrollo Frontend: React, TypeScript, JavaScript (ES6+)",
-        "Estilización: Tailwind CSS, CSS3, SASS",
-        "Herramientas: Git, npm/yarn, Webpack, Vite",
-        "Metodologías: Agile, Scrum, TDD"
-      ]
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-gray-900 py-24 px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl">
-        <motion.div
-          className="text-center mb-16"
+      <div className="mx-auto max-w-4xl">
+        <motion.h1 
+          className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-400 to-purple-600 bg-clip-text text-transparent"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="bg-gradient-to-r from-indigo-400 to-purple-600 bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl">
-            Sobre Mí
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-xl text-gray-400">
-            Conoce más sobre mi trayectoria profesional y habilidades
-          </p>
-        </motion.div>
-
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
-          {sections.map((section, index) => (
+          About Me
+        </motion.h1>
+        
+        <div className="space-y-8">
+          {aboutSections.map((section, index: number) => (
             <motion.div
               key={section.title}
-              className="rounded-2xl bg-gray-800 p-8 shadow-xl"
+              className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-700/50 hover:border-indigo-500/50 transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 * index }}
-              whileHover={{ y: -5, transition: { duration: 0.2 } }}
+              whileHover={{ scale: 1.02 }}
+              transition={{ 
+                delay: index * 0.1, 
+                duration: 0.5,
+                type: 'spring',
+                stiffness: 100
+              }}
             >
-              <h3 className="mb-4 text-2xl font-bold text-white">
+              <h2 className="text-2xl font-semibold mb-4 text-indigo-400 flex items-center">
+                <span className="w-2 h-2 rounded-full bg-indigo-500 mr-3"></span>
                 {section.title}
-              </h3>
-              <ul className="space-y-3">
-                {section.content.map((item, i) => (
-                  <li key={i} className="flex items-start">
-                    <span className="mr-2 mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-indigo-500"></span>
-                    <span className="text-gray-300">{item}</span>
-                  </li>
+              </h2>
+              <ul className="space-y-3 pl-5">
+                {section.content.map((item: string, i: number) => (
+                  <motion.li
+                    key={i}
+                    className="text-gray-300 relative pl-4 before:content-['•'] before:absolute before:left-0 before:text-indigo-400"
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ 
+                      delay: 0.3 + (i * 0.1),
+                      type: 'spring',
+                      stiffness: 100
+                    }}
+                  >
+                    {item}
+                  </motion.li>
                 ))}
               </ul>
             </motion.div>
           ))}
         </div>
-
-        <motion.div 
-          className="mt-16 rounded-2xl bg-gradient-to-r from-indigo-900/30 to-purple-900/30 p-8 backdrop-blur-sm"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
+        <motion.div
+          className="text-gray-300"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ 
+            delay: 0.5, 
+            duration: 0.5,
+            type: 'spring',
+            stiffness: 100
+          }}
         >
-          <h3 className="mb-4 text-2xl font-bold text-white">
-            ¿Por qué me apasiona lo que hago?
-          </h3>
-          <p className="text-gray-300">
-            Me encanta crear experiencias digitales que no solo se vean bien, sino que también sean intuitivas y accesibles para todos. Creo en el poder de la tecnología para resolver problemas y mejorar la vida de las personas, y me esfuerzo por escribir código limpio, mantenible y bien documentado.
+          <p className="mt-8 text-center text-lg leading-relaxed">
+            I'm passionate about creating digital experiences that not only look great but are also intuitive and accessible to everyone. I believe in technology's power to solve problems and improve people's lives, and I strive to write clean, maintainable, and well-documented code. My approach combines technical excellence with user-centered design to deliver meaningful digital solutions.
           </p>
         </motion.div>
       </div>
