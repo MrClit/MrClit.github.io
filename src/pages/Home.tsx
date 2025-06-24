@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Home: React.FC = () => {
   return (
@@ -30,9 +31,41 @@ const Home: React.FC = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.4 }}
         >
-          ¡Bienvenido a mi portfolio! Aquí encontrarás mis proyectos y experiencia
-          profesional.
+          Welcome to my portfolio! Here you'll find my projects and professional
+          experience.
         </motion.p>
+        <motion.div 
+          className="flex gap-6 mt-6 justify-center md:justify-start"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.6 }}
+        >
+          <a 
+            href="https://github.com/MrClit" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white hover:text-indigo-200 transition-colors duration-200"
+            aria-label="GitHub"
+          >
+            <FaGithub size={28} />
+          </a>
+          <a 
+            href="https://linkedin.com/in/vsales" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white hover:text-indigo-200 transition-colors duration-200"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin size={28} />
+          </a>
+          <a 
+            href="mailto:victor.sales83@gmail.com" 
+            className="text-white hover:text-indigo-200 transition-colors duration-200"
+            aria-label="Send email"
+          >
+            <FaEnvelope size={28} />
+          </a>
+        </motion.div>
       </div>
     </div>
   );

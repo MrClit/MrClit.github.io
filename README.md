@@ -1,21 +1,43 @@
-# Portfolio React App
+# Personal Website & Portfolio 🚧
 
-Este esqueleto utiliza las últimas versiones de React, Tailwind CSS 4, React Router y Zustand, creado con Vite.
+> **Note:** This is a work in progress
 
-## Instalación
+Welcome to my personal website and professional portfolio! This project showcases my work and expertise as a Data & Analytics Consultant and Software Engineer.
 
-```bash
-npm install
-npm run dev
-```
+## 🚀 Technologies Used
 
-Luego abre `http://localhost:5173` en tu navegador.
+- ⚡ React 18 with Vite
+- 🎨 Tailwind CSS 4 for styling
+- 🔄 React Router for navigation
+- 🏪 Zustand for state management
 
-## Estructura
+## 🛠️ Getting Started
 
-- `src/pages` – tres páginas principales: Inicio, Proyectos y Sobre mí.
-- `src/components/NavBar.jsx` – navegación superior.
-- `src/store` – ejemplo de tienda global con Zustand.
-- `tailwind.config.js` y `postcss.config.js` – configuración de Tailwind.
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open `http://localhost:5173` in your browser
 
-Personaliza textos, imágenes (`/public`) y añade tus proyectos reales.
+## 🏗️ Project Structure
+
+- `src/pages` – Main website sections (Home, Projects, About)
+- `src/components` – Reusable UI components
+- `src/store` – Global state management with Zustand
+- `public` – Static assets (images, documents)
+
+## 📝 Features (Planned)
+
+- Professional portfolio showcasing Data & Analytics projects
+- Technical blog about software engineering and data science
+- Contact form and professional networking links
+- Responsive design for all devices
+
+## 📬 Contact
+
+Feel free to reach out for collaborations or just to say hi!

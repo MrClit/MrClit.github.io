@@ -13,19 +13,19 @@ const NavBar: React.FC = () => {
         to="/" 
         className={({ isActive }) => getNavLinkClass(isActive)}
       >
-        Inicio
+        Home
       </NavLink>
       <NavLink 
         to="/projects" 
         className={({ isActive }) => getNavLinkClass(isActive)}
       >
-        Proyectos
+        Projects
       </NavLink>
       <NavLink 
         to="/about" 
         className={({ isActive }) => getNavLinkClass(isActive)}
       >
-        Sobre mí
+        About me
       </NavLink>
     </nav>
   );

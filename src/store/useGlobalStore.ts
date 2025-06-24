@@ -9,6 +9,8 @@ interface Project {
   tags: string[];
 }
 
+type ActivePage = 'home' | 'projects' | 'about';
+
 interface GlobalState {
   projects: Project[];
   setProjects: (projects: Project[]) => void;
