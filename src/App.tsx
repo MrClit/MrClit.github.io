@@ -1,19 +1,38 @@
 import { Routes, Route } from "react-router-dom";
+import { useEffect } from 'react';
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import NavBar from "./components/NavBar";
+import useThemeStore from "./store/useGlobalStore";
+
+// Componente para manejar el tema
+const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
+  const { theme } = useThemeStore();
+
+  useEffect(() => {
+    const root = document.documentElement;
+    console.log('Aplicando tema:', theme);
+    root.className = theme;
+  }, [theme]);
+
+  return <>{children}</>;
+};
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </div>
+    <ThemeProvider>
+      <div className="flex flex-col min-h-screen bg-white dark:bg-gray-900">
+        <NavBar />
+        <main className="flex-grow pt-16">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+      </div>
+    </ThemeProvider>
   );
 }
 

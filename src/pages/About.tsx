@@ -5,10 +5,10 @@ import { aboutSections } from "../data/about";
 const About: React.FC = () => {
 
   return (
-    <div className="min-h-screen bg-gray-900 py-24 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-200 dark:bg-gray-900 py-24 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-4xl">
         <motion.h1 
-          className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-400 to-purple-600 bg-clip-text text-transparent"
+          className="text-4xl font-bold text-center mb-12"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -20,7 +20,12 @@ const About: React.FC = () => {
           {aboutSections.map((section, index: number) => (
             <motion.div
               key={section.title}
-              className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-gray-700/50 hover:border-indigo-500/50 transition-all duration-300"
+              className="
+                bg-gray-300 dark:bg-gray-800 
+                backdrop-blur-sm rounded-xl p-6 shadow-lg 
+                border border-gray-300/50 hover:border-indigo-300/50 
+                dark:border-gray-700/50 dark:hover:border-indigo-500/50
+                transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               whileHover={{ scale: 1.02 }}
@@ -31,15 +36,15 @@ const About: React.FC = () => {
                 stiffness: 100
               }}
             >
-              <h2 className="text-2xl font-semibold mb-4 text-indigo-400 flex items-center">
-                <span className="w-2 h-2 rounded-full bg-indigo-500 mr-3"></span>
+              <h2 className="text-2xl font-semibold mb-4 text-indigo-800 dark:text-indigo-400 flex items-center">
+                <span className="w-2 h-2 rounded-full bg-indigo-800 dark:bg-indigo-400 mr-3"></span>
                 {section.title}
               </h2>
               <ul className="space-y-3 pl-5">
                 {section.content.map((item: string, i: number) => (
                   <motion.li
                     key={i}
-                    className="text-gray-300 relative pl-4 before:content-['•'] before:absolute before:left-0 before:text-indigo-400"
+                    className="text-gray-800 dark:text-gray-300 relative pl-4 before:content-['•'] before:absolute before:left-0 before:text-indigo-800 dark:before:text-indigo-400"
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ 
@@ -56,7 +61,6 @@ const About: React.FC = () => {
           ))}
         </div>
         <motion.div
-          className="text-gray-300"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ 

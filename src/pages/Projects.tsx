@@ -5,7 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 const Projects: React.FC = () => {
 
   return (
-    <div className="min-h-screen bg-gray-900 py-24 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-200 dark:bg-gray-900 py-24 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <motion.div
           className="text-center mb-5"
@@ -13,10 +13,10 @@ const Projects: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="bg-gradient-to-r from-indigo-400 to-purple-600 bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl">
+          <h2 className="text-4xl font-extrabold sm:text-5xl">
             My Projects
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-xl text-gray-400">
+          <p className="mx-auto mt-4 max-w-2xl text-xl">
             Some of my recent works and projects
           </p>
         </motion.div>

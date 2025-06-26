@@ -1,24 +1,41 @@
-import { create } from "zustand";
+import { create } from 'zustand';
+import { persist } from 'zustand/middleware';
 
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-  url: string;
-  tags: string[];
+type Theme = 'light' | 'dark';
+
+interface ThemeStore {
+  theme: Theme;
+  toggleTheme: () => void;
+  setTheme: (theme: Theme) => void;
 }
 
-type ActivePage = 'home' | 'projects' | 'about';
+const useThemeStore = create<ThemeStore>()(
+  persist(
+    (set) => ({
+      theme: 'light',
+      toggleTheme: () => {
+        return set((state) => {
+          const newTheme = state.theme === 'light' ? 'dark' : 'light';
+          console.log('Nuevo tema establecido:', newTheme);
+          return { theme: newTheme };
+        });
+      },
+      setTheme: (theme) => {
+        console.log('Estableciendo tema a:', theme);
+        return set({ theme });
+      },
+    }),
+    {
+      name: 'theme-storage',
+      version: 1,
+    }
+  )
+);
 
-interface GlobalState {
-  projects: Project[];
-  setProjects: (projects: Project[]) => void;
-}
+// Hook personalizado para facilitar el uso
+export const useTheme = () => {
+  const { theme, toggleTheme, setTheme } = useThemeStore();
+  return { theme, toggleTheme, setTheme };
+};
 
-const useGlobalStore = create<GlobalState>((set) => ({
-  projects: [],
-  setProjects: (projects) => set({ projects }),
-}));
-
-export default useGlobalStore;
+export default useThemeStore;
