@@ -3,7 +3,9 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col md:flex-row items-center justify-center p-8 bg-gradient-to-br from-indigo-900 to-purple-600 gap-8">
+    <div className="min-h-screen flex flex-col md:flex-row items-center justify-center p-8 
+      bg-gradient-to-br from-indigo-300 to-purple-100 gap-8 
+      dark:from-indigo-950 dark:to-purple-800">
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -13,7 +15,10 @@ const Home: React.FC = () => {
         <img
           src="/avatar.jpeg"
           alt="Foto de perfil"
-          className="w-auto h-64 md:w-auto md:h-80 rounded-xl object-contain shadow-xl border-4 border-indigo-400"
+          className="w-auto h-64 md:w-auto md:h-80 rounded-xl object-contain shadow-xl 
+          border-4 border-indigo-400 dark:border-purple-500
+          transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl
+          hover:border-indigo-500 dark:hover:border-purple-400"
         />
       </motion.div>
       <div className="text-center md:text-left max-w-2xl">
@@ -26,13 +31,15 @@ const Home: React.FC = () => {
           Víctor Sales Barberà
         </motion.h1>
         <motion.p 
-          className="text-lg md:text-xl text-gray-100"
+          className="text-lg md:text-xl"
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.4 }}
         >
-          Welcome to my portfolio! Here you'll find my projects and professional
-          experience.
+          Corporate Performance Management (CPM) expert turned Software Developer.
+          For 15 years, I've helped organizations optimize their financial and operational
+          performance through data-driven strategies. Now, I'm applying this expertise
+          to develop powerful software solutions that drive business success.
         </motion.p>
         <motion.div 
           className="flex gap-6 mt-6 justify-center md:justify-start"
@@ -44,23 +51,23 @@ const Home: React.FC = () => {
             href="https://github.com/MrClit" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-white hover:text-indigo-200 transition-colors duration-200"
+            className="hover:text-indigo-200 dark:hover:text-purple-300 transition-colors duration-200"
             aria-label="GitHub"
           >
             <FaGithub size={28} />
           </a>
           <a 
-            href="https://linkedin.com/in/vsales" 
+            href="https://linkedin.com/in/vsales"
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-white hover:text-indigo-200 transition-colors duration-200"
+            className="hover:text-indigo-200 dark:hover:text-purple-300 transition-colors duration-200"
             aria-label="LinkedIn"
           >
             <FaLinkedin size={28} />
           </a>
           <a 
             href="mailto:victor.sales83@gmail.com" 
-            className="text-white hover:text-indigo-200 transition-colors duration-200"
+            className="hover:text-indigo-200 dark:hover:text-purple-300 transition-colors duration-200"
             aria-label="Send email"
           >
             <FaEnvelope size={28} />
