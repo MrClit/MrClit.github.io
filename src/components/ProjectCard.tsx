@@ -8,7 +8,10 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => (
 <motion.a
     href={project.url}
-    className="group relative overflow-hidden rounded-xl bg-gray-200 dark:bg-gray-800 shadow-lg transition-all duration-300 hover:shadow-2xl hover:shadow-indigo-900/20"
+    className="group relative overflow-hidden rounded-xl 
+        bg-gray-200 dark:bg-gray-700 shadow-lg 
+        transition-all duration-300 hover:shadow-2xl hover:shadow-indigo-900/20
+        w-full max-w-md mx-auto"
     whileHover={{ y: -5 }}
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
