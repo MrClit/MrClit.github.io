@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import useThemeStore from '../store/useGlobalStore';
+import useThemeStore from '../store/useThemeStore';
 
 const ThemeToggle = () => {
   const { theme, toggleTheme } = useThemeStore();
@@ -11,7 +11,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={handleClick}
-      className="p-2 rounded-full bg-gray-900 dark:bg-gray-300 hover:cursor-pointer"
+      className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 dark:bg-gray-300 hover:cursor-pointer"
     >
       {theme === 'light' ? '🌙' : '☀️'}
     </button>

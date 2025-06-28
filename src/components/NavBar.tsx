@@ -9,7 +9,7 @@ const NavBar: React.FC = () => {
     `${linkBase} ${isActive ? linkActive : linkInactive}`;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 w-full flex justify-between items-center py-2 px-4 bg-white/5 dark:bg-gray-800/5 backdrop-blur-lg shadow-sm z-50">
+    <nav className="fixed top-0 left-0 right-0 w-full flex justify-between items-center py-2 px-4 bg-white/5 dark:bg-gray-900/5 backdrop-blur-lg shadow-sm z-50">
     <div className="flex gap-4">
         <NavLink 
           to="/" 

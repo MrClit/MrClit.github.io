@@ -5,7 +5,7 @@ import { aboutSections } from "../data/about";
 const About: React.FC = () => {
 
   return (
-    <div className="min-h-screen bg-gray-200 dark:bg-gray-900 py-24 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-200 dark:bg-gray-700 py-24 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-4xl">
         <motion.h1 
           className="text-4xl font-bold text-center mb-12"

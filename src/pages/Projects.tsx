@@ -4,8 +4,14 @@ import ProjectCard from "../components/ProjectCard";
 
 const Projects: React.FC = () => {
 
+const gridMap: Record<number, string> = {
+  1: "grid-cols-1",
+  2: "grid-cols-1 md:grid-cols-2 lg:grid-cols-2",
+};
+const gridConfig = gridMap[projectsData.length] || "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+  
   return (
-    <div className="min-h-screen bg-gray-200 dark:bg-gray-900 py-24 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-200 dark:bg-gray-800 py-24 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <motion.div
           className="text-center mb-5"
@@ -21,7 +27,7 @@ const Projects: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className={`grid ${gridConfig} gap-8`}>
           {projectsData.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

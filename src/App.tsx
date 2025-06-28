@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import NavBar from "./components/NavBar";
-import useThemeStore from "./store/useGlobalStore";
+import useThemeStore from "./store/useThemeStore";
 
 // Componente para manejar el tema
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
@@ -12,7 +12,6 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     const root = document.documentElement;
-    console.log('Aplicando tema:', theme);
     root.className = theme;
   }, [theme]);
 
