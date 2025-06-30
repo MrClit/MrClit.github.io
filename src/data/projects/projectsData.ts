@@ -7,7 +7,13 @@ export const projectsData: Project[] = [
     description: "Automated integration between Qlik Sense and Veeva Vault using Node.js backend, web frontend, and JSON logs for traceability and monitoring.",
     image: "/Otsuka.png",
     url: "#",
-    tags: ["Node.js", "JavaScript", "HTML", "CSS"],
+    // tags: ["Node.js", "JavaScript", "HTML", "CSS"],
+    tags: [
+      { icon: "SiNodedotjs", lib: "si", label: "Node.js" },
+      { icon: "SiJavascript", lib: "si", label: "JavaScript" },
+      { icon: "SiCss3", lib: "si", label: "CSS" },
+      // ...
+],
   },
   {
     id: 2,

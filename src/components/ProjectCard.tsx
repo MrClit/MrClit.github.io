@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Project } from "../data/projects";
+import { IconRenderer } from "./IconRenderer";
 
 interface ProjectCardProps {
     project: Project;
@@ -30,10 +31,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => (
         <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
             <span
-                key={tag}
-                className="rounded-full bg-indigo-300/50 dark:bg-indigo-900/50 px-3 py-1 text-sm text-indigo-900 dark:text-indigo-200"
+                key={tag.label}
+                className="flex flex-col items-center gap-1 px-3 py-1 text-sm text-indigo-900 dark:text-indigo-200"
             >
-                {tag}
+                <IconRenderer lib={tag.lib} icon={tag.icon} size={30} />
+                {tag.label}
             </span>
             ))}
         </div>
