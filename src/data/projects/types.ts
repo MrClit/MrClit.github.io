@@ -4,5 +4,5 @@ export interface Project {
   description: string;
   image: string;
   url: string;
-  tags: string[];
+  tags: { icon: string; lib: string; label: string }[];
 }

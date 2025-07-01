@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import NavBar from "./components/NavBar";
 import useThemeStore from "./store/useThemeStore";
+import './i18n'; // Importa la configuración de i18n
 
 // Componente para manejar el tema
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {

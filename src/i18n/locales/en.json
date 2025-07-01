@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About"
+  },
+  "home": {
+    "intro": "Corporate Performance Management (CPM) expert turned Software Developer. For 15 years, I've helped organizations optimize their financial and operational performance through data-driven strategies. Now, I'm applying this expertise to develop powerful software solutions that drive business success."
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Some of my recent works and projects",
+    "list": [
+      {
+        "id": 1,
+        "title": "Qlik Sense and Veeva Vault Integration",
+        "description": "Automated integration between Qlik Sense and Veeva Vault using Node.js backend, web frontend, and JSON logs for traceability and monitoring."
+      },
+      {
+        "id": 2,
+        "title": "Coming soon...",
+        "description": "This project is under development and will be available soon."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Me",
+    "sections": [
+      {
+        "title": "Professional Experience",
+        "content": [
+          "I have worked as a frontend developer for X years, specializing in creating modern and responsive user interfaces.",
+          "I have participated in projects ranging from small-scale web applications to complex enterprise solutions.",
+          "My experience includes working with cross-functional teams following agile methodologies."
+        ]
+      },
+      {
+        "title": "Education",
+        "content": [
+          "Bachelor's Degree in [Your Degree] from [University]",
+          "Specialized courses in web development and frontend technologies",
+          "Certifications in relevant technologies"
+        ]
+      },
+      {
+        "title": "Technical Skills",
+        "content": [
+          "Frontend Development: React, TypeScript, JavaScript (ES6+)",
+          "Styling: Tailwind CSS, CSS3, SASS",
+          "Tools: Git, npm/yarn, Webpack, Vite",
+          "Methodologies: Agile, Scrum, TDD"
+        ]
+      }
+    ],
+    "summary": "I'm passionate about creating digital experiences that not only look great but are also intuitive and accessible to everyone. I believe in technology's power to solve problems and improve people's lives, and I strive to write clean, maintainable, and well-documented code. My approach combines technical excellence with user-centered design to deliver meaningful digital solutions."
+  }
+}
