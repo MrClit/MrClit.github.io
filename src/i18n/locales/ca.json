@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "home": "Inici",
+    "projects": "Projectes",
+    "about": "Sobre mi"
+  },
+  "home": {
+    "intro": "Expert en Corporate Performance Management (CPM) convertit en desenvolupador de software. Durant 15 anys he ajudat organitzacions a optimitzar el seu rendiment financer i operatiu mitjançant estratègies basades en dades. Ara aplico aquesta experiència per desenvolupar potents solucions de software que impulsen l'èxit empresarial."
+  },
+  "projects": {
+    "title": "Els meus projectes",
+    "subtitle": "Alguns dels meus treballs i projectes recents",
+    "list": [
+      {
+        "id": 1,
+        "title": "Integració Qlik Sense i Veeva Vault",
+        "description": "Integració automatitzada entre Qlik Sense i Veeva Vault utilitzant backend Node.js, frontend web i logs JSON per a traçabilitat i monitoratge."
+      },
+      {
+        "id": 2,
+        "title": "Pròximament...",
+        "description": "Aquest projecte està en desenvolupament i estarà disponible aviat."
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre mi",
+    "sections": [
+      {
+        "title": "Experiència Professional",
+        "content": [
+          "He treballat durant 15 anys en projectes de Corporate Performance Management (CPM), ajudant organitzacions a optimitzar el seu rendiment financer i operatiu.",
+          "Tinc experiència en tecnologies com SAP BPC, SAP BW, SAP Analytics Cloud i Board, participant en la implementació i optimització de solucions avançades.",
+          "He liderat projectes d'alta complexitat en grans corporacions, gestionant equips multidisciplinaris i assegurant l'èxit en entorns exigents."
+        ]
+      },
+      {
+        "title": "Educació",
+        "content": [
+          "Grau en Enginyeria Informàtica per la Universitat Autònoma de Barcelona (UAB)",
+          "Màster en Business Intelligence per la Universitat Oberta de Catalunya (UOC)",
+          "Formacions diverses en Angular, React, Node.js, Java Spring Boot, i en arquitectura de software"
+        ]
+      },
+      {
+        "title": "Habilitats Tècniques",
+        "content": [
+          "Desenvolupament Frontend: React, TypeScript, JavaScript (ES6+)",
+          "Estils: Tailwind CSS, CSS3, SASS",
+          "Eines: Git, npm/yarn, Webpack, Vite",
+          "Metodologies: Àgil, Scrum, TDD"
+        ]
+      }
+    ],
+    "summary": "M'apassiona crear experiències digitals que no només es vegin bé, sinó que també siguin intuïtives i accessibles per a tothom. Crec en el poder de la tecnologia per resoldre problemes i millorar la vida de les persones, i m'esforço per escriure codi net, mantenible i ben documentat. El meu enfocament combina l'excel·lència tècnica amb el disseny centrat en l'usuari per oferir solucions digitals significatives."
+  },
+  "suspense": {
+    "loading": "Carregant..."
+  }
+}

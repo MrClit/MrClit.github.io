@@ -1,8 +1,9 @@
-
 import { motion } from "framer-motion";
-import { aboutSections } from "../data/about";
+import { useTranslation } from "react-i18next";
 
 const About: React.FC = () => {
+  const { t } = useTranslation();
+  const aboutSections = t('about.sections', { returnObjects: true }) as Array<{ title: string, content: string[] }>;
 
   return (
     <div className="min-h-screen bg-gray-200 dark:bg-gray-700 py-24 px-4 sm:px-6 lg:px-8">
@@ -13,9 +14,8 @@ const About: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          About Me
+          {t('about.title')}
         </motion.h1>
-        
         <div className="space-y-8">
           {aboutSections.map((section, index: number) => (
             <motion.div
@@ -71,7 +71,7 @@ const About: React.FC = () => {
           }}
         >
           <p className="mt-8 text-center text-lg leading-relaxed">
-            I'm passionate about creating digital experiences that not only look great but are also intuitive and accessible to everyone. I believe in technology's power to solve problems and improve people's lives, and I strive to write clean, maintainable, and well-documented code. My approach combines technical excellence with user-centered design to deliver meaningful digital solutions.
+            {t('about.summary')}
           </p>
         </motion.div>
       </div>

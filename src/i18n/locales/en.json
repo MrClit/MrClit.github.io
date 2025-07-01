@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About"
+  },
+  "home": {
+    "intro": "Corporate Performance Management (CPM) expert turned Software Developer. For 15 years, I've helped organizations optimize their financial and operational performance through data-driven strategies. Now, I'm applying this expertise to develop powerful software solutions that drive business success."
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Some of my recent works and projects",
+    "list": [
+      {
+        "id": 1,
+        "title": "Qlik Sense and Veeva Vault Integration",
+        "description": "Automated integration between Qlik Sense and Veeva Vault using Node.js backend, web frontend, and JSON logs for traceability and monitoring."
+      },
+      {
+        "id": 2,
+        "title": "Coming soon...",
+        "description": "This project is under development and will be available soon."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Me",
+    "sections": [
+      {
+        "title": "Professional Experience",
+        "content": [
+          "I have worked for 15 years on Corporate Performance Management (CPM) projects, helping organizations optimize their financial and operational performance.",
+          "I have experience with technologies such as SAP BPC, SAP BW, SAP Analytics Cloud, and Board, participating in the implementation and optimization of advanced solutions.",
+          "I have led highly complex projects in large corporations, managing multidisciplinary teams and ensuring success in demanding environments."
+        ]
+      },
+      {
+        "title": "Education",
+        "content": [
+          "Bachelor's Degree in Computer Engineering from the Autonomous University of Barcelona (UAB)",
+          "Master's in Business Intelligence from the Open University of Catalonia (UOC)",
+          "Various training in Angular, React, Node.js, Java Spring Boot, and software architecture"
+        ]
+      },
+      {
+        "title": "Technical Skills",
+        "content": [
+          "Frontend Development: React, TypeScript, JavaScript (ES6+)",
+          "Styling: Tailwind CSS, CSS3, SASS",
+          "Tools: Git, npm/yarn, Webpack, Vite",
+          "Methodologies: Agile, Scrum, TDD"
+        ]
+      }
+    ],
+    "summary": "I'm passionate about creating digital experiences that not only look great but are also intuitive and accessible to everyone. I believe in technology's power to solve problems and improve people's lives, and I strive to write clean, maintainable, and well-documented code. My approach combines technical excellence with user-centered design to deliver meaningful digital solutions."
+  },
+  "suspense": {
+    "loading": "Loading..."
+  }
+}

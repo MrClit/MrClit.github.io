@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Home: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen flex flex-col md:flex-row items-center justify-center p-8 
       bg-gradient-to-br from-indigo-300 to-purple-100 gap-8 
@@ -36,10 +38,7 @@ const Home: React.FC = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.4 }}
         >
-          Corporate Performance Management (CPM) expert turned Software Developer.
-          For 15 years, I've helped organizations optimize their financial and operational
-          performance through data-driven strategies. Now, I'm applying this expertise
-          to develop powerful software solutions that drive business success.
+          {t('home.intro')}
         </motion.p>
         <motion.div 
           className="flex gap-6 mt-6 justify-center md:justify-start"

@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "about": "Acerca de"
+  },
+  "home": {
+    "intro": "Experto en Corporate Performance Management (CPM) convertido en desarrollador de software. Durante 15 años he ayudado a organizaciones a optimizar su rendimiento financiero y operativo mediante estrategias basadas en datos. Ahora aplico esta experiencia para desarrollar potentes soluciones software que impulsan el éxito empresarial."
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "subtitle": "Algunos de mis trabajos y proyectos recientes",
+    "list": [
+      {
+        "id": 1,
+        "title": "Integración Qlik Sense y Veeva Vault",
+        "description": "Integración automatizada entre Qlik Sense y Veeva Vault usando backend Node.js, frontend web y logs JSON para trazabilidad y monitorización."
+      },
+      {
+        "id": 2,
+        "title": "Próximamente...",
+        "description": "Este proyecto está en desarrollo y estará disponible pronto."
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre mí",
+    "sections": [
+      {
+        "title": "Experiencia Profesional",
+        "content": [
+          "He trabajado durante 15 años en proyectos de Corporate Performance Management (CPM), ayudando a organizaciones a optimizar su rendimiento financiero y operativo.",
+          "Tengo experiencia en tecnologías como SAP BPC, SAP BW, SAP Analytics Cloud y Board, participando en la implementación y optimización de soluciones avanzadas.",
+          "He liderado proyectos de alta complejidad en grandes corporaciones, gestionando equipos multidisciplinares y asegurando el éxito en entornos exigentes."
+        ]
+      },
+      {
+        "title": "Educación",
+        "content": [
+          "Licenciatura en Ingeniería en Informática por la Universidad Autónoma de Barcelona (UAB)",
+          "Master en Business Intelligence por la Universitat Oberta de Catalunya (UOC)",
+          "Formaciones varias en Angular, React, Node.js, Java Spring Boot, y en arquitectura de software"
+        ]
+      },
+      {
+        "title": "Habilidades Técnicas",
+        "content": [
+          "Desarrollo Frontend: React, TypeScript, JavaScript (ES6+)",
+          "Estilos: Tailwind CSS, CSS3, SASS",
+          "Herramientas: Git, npm/yarn, Webpack, Vite",
+          "Metodologías: Ágil, Scrum, TDD"
+        ]
+      }
+    ],
+    "summary": "Me apasiona crear experiencias digitales que no solo se vean bien, sino que también sean intuitivas y accesibles para todos. Creo en el poder de la tecnología para resolver problemas y mejorar la vida de las personas, y me esfuerzo por escribir código limpio, mantenible y bien documentado. Mi enfoque combina la excelencia técnica con el diseño centrado en el usuario para ofrecer soluciones digitales significativas."
+  },
+  "suspense": {
+    "loading": "Cargando..."
+  }
+}
