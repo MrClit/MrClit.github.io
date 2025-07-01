@@ -25,6 +25,7 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
 function App() {
   const { t } = useTranslation();
+  
   return (
     <ThemeProvider>
       <div className="flex flex-col min-h-screen bg-white dark:bg-gray-900">
