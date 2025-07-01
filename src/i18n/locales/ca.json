@@ -29,17 +29,17 @@
       {
         "title": "Experiència Professional",
         "content": [
-          "He treballat com a desenvolupador frontend durant X anys, especialitzant-me en la creació d'interfícies d'usuari modernes i responsives.",
-          "He participat en projectes que van des d'aplicacions web de petita escala fins a solucions empresarials complexes.",
-          "La meva experiència inclou treballar amb equips multifuncionals seguint metodologies àgils."
+          "He treballat durant 15 anys en projectes de Corporate Performance Management (CPM), ajudant organitzacions a optimitzar el seu rendiment financer i operatiu.",
+          "Tinc experiència en tecnologies com SAP BPC, SAP BW, SAP Analytics Cloud i Board, participant en la implementació i optimització de solucions avançades.",
+          "He liderat projectes d'alta complexitat en grans corporacions, gestionant equips multidisciplinaris i assegurant l'èxit en entorns exigents."
         ]
       },
       {
         "title": "Educació",
         "content": [
-          "Llicenciatura en [La teva carrera] per [Universitat]",
-          "Cursos especialitzats en desenvolupament web i tecnologies frontend",
-          "Certificacions en tecnologies rellevants"
+          "Grau en Enginyeria Informàtica per la Universitat Autònoma de Barcelona (UAB)",
+          "Màster en Business Intelligence per la Universitat Oberta de Catalunya (UOC)",
+          "Formacions diverses en Angular, React, Node.js, Java Spring Boot, i en arquitectura de software"
         ]
       },
       {
@@ -53,5 +53,8 @@
       }
     ],
     "summary": "M'apassiona crear experiències digitals que no només es vegin bé, sinó que també siguin intuïtives i accessibles per a tothom. Crec en el poder de la tecnologia per resoldre problemes i millorar la vida de les persones, i m'esforço per escriure codi net, mantenible i ben documentat. El meu enfocament combina l'excel·lència tècnica amb el disseny centrat en l'usuari per oferir solucions digitals significatives."
+  },
+  "suspense": {
+    "loading": "Carregant..."
   }
 }

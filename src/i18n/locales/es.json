@@ -29,17 +29,17 @@
       {
         "title": "Experiencia Profesional",
         "content": [
-          "He trabajado como desarrollador frontend durante X años, especializándome en la creación de interfaces de usuario modernas y responsivas.",
-          "He participado en proyectos que van desde aplicaciones web de pequeña escala hasta soluciones empresariales complejas.",
-          "Mi experiencia incluye trabajar con equipos multifuncionales siguiendo metodologías ágiles."
+          "He trabajado durante 15 años en proyectos de Corporate Performance Management (CPM), ayudando a organizaciones a optimizar su rendimiento financiero y operativo.",
+          "Tengo experiencia en tecnologías como SAP BPC, SAP BW, SAP Analytics Cloud y Board, participando en la implementación y optimización de soluciones avanzadas.",
+          "He liderado proyectos de alta complejidad en grandes corporaciones, gestionando equipos multidisciplinares y asegurando el éxito en entornos exigentes."
         ]
       },
       {
         "title": "Educación",
         "content": [
-          "Licenciatura en [Tu Carrera] de [Universidad]",
-          "Cursos especializados en desarrollo web y tecnologías frontend",
-          "Certificaciones en tecnologías relevantes"
+          "Licenciatura en Ingeniería en Informática por la Universidad Autónoma de Barcelona (UAB)",
+          "Master en Business Intelligence por la Universitat Oberta de Catalunya (UOC)",
+          "Formaciones varias en Angular, React, Node.js, Java Spring Boot, y en arquitectura de software"
         ]
       },
       {
@@ -53,6 +53,8 @@
       }
     ],
     "summary": "Me apasiona crear experiencias digitales que no solo se vean bien, sino que también sean intuitivas y accesibles para todos. Creo en el poder de la tecnología para resolver problemas y mejorar la vida de las personas, y me esfuerzo por escribir código limpio, mantenible y bien documentado. Mi enfoque combina la excelencia técnica con el diseño centrado en el usuario para ofrecer soluciones digitales significativas."
+  },
+  "suspense": {
+    "loading": "Cargando..."
   }
-  
 }
