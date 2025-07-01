@@ -74,7 +74,7 @@ const NavBar: React.FC = () => {
         </div>
       )}
       {/* Botones de la derecha */}
-      <div className="flex items-center ml-2">
+      <div className="flex items-center justify-center ml-4 gap-4">
         <LanguageSwitcher />
         <ThemeToggle />
       </div>
