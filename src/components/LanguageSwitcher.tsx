@@ -13,11 +13,11 @@ const LanguageSwitcher: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="relative mr-2">
+    <div className="relative">
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className="px-2 py-1 rounded text-xs font-semibold 
-                bg-indigo-200 dark:bg-indigo-600 
+        className="px-2 py-2 rounded text-xs font-semibold 
+                bg-gray-300 dark:bg-gray-700
                 text-gray-800 dark:text-gray-200 
                 hover:bg-indigo-100 dark:hover:bg-indigo-800 
                 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-400 

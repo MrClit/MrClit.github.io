@@ -11,9 +11,14 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={handleClick}
-      className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 dark:bg-gray-300 hover:cursor-pointer"
+      className="w-14 h-8 flex items-center rounded-full p-1 transition-colors duration-300 focus:outline-none bg-gray-300 dark:bg-gray-700"
+      aria-label="Toggle theme"
     >
-      {theme === 'light' ? '🌙' : '☀️'}
+      <span
+        className={`w-6 h-6 flex items-center justify-center rounded-full shadow-md transform transition-transform duration-300 bg-white dark:bg-gray-900 ${theme === 'dark' ? 'translate-x-6' : 'translate-x-0'}`}
+      >
+        {theme === 'dark' ? '🌙' : '☀️'}
+      </span>
     </button>
   );
 };
