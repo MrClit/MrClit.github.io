@@ -3,15 +3,15 @@ import { Routes, Route } from "react-router-dom";
 import { useEffect } from 'react';
 import NavBar from "./components/NavBar";
 import useThemeStore from "./store/useThemeStore";
-import './i18n'; // Importa la configuración de i18n
+import './i18n';
 import { useTranslation } from "react-i18next";
 
-// Lazy load de las páginas
+// Lazy load the pages
 const Home = lazy(() => import("./pages/Home"));
 const Projects = lazy(() => import("./pages/Projects"));
 const About = lazy(() => import("./pages/About"));
 
-// Componente para manejar el tema
+// Component to handle the theme
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const { theme } = useThemeStore();
 

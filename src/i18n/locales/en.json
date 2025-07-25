@@ -9,17 +9,17 @@
   },
   "projects": {
     "title": "My Projects",
-    "subtitle": "Some of my recent works and projects",
+    "subtitle": "Some of my recent work and projects",
     "list": [
       {
         "id": 1,
-        "title": "Qlik Sense and Veeva Vault Integration",
+        "title": "Qlik Sense & Veeva Vault Integration",
         "description": "Automated integration between Qlik Sense and Veeva Vault using Node.js backend, web frontend, and JSON logs for traceability and monitoring."
       },
       {
         "id": 2,
-        "title": "Coming soon...",
-        "description": "This project is under development and will be available soon."
+        "title": "FRI€NDS",
+        "description": "Web app to manage and share expenses among friends in a simple and visual way. Built with React, TypeScript, and Tailwind CSS."
       }
     ]
   },

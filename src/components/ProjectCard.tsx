@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Project } from "../data/projects";
 import { IconRenderer } from "./IconRenderer";
+import { FaGithub } from "react-icons/fa";
 
 interface ProjectCardProps {
     project: Project;
@@ -9,6 +10,8 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => (
 <motion.a
     href={project.url}
+    target="_blank"
+    rel="noopener noreferrer"
     className="group relative overflow-hidden rounded-xl 
         bg-gray-200 dark:bg-gray-700 shadow-lg 
         transition-all duration-300 hover:shadow-2xl hover:shadow-indigo-900/20
@@ -18,6 +21,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
 >
+    {/* GitHub repo icon top-right */}
+    {project.repo && (
+      <a
+        href={project.repo}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute top-3 right-3 z-10 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 shadow hover:bg-indigo-100 dark:hover:bg-indigo-700 transition-colors"
+        onClick={e => e.stopPropagation()}
+        aria-label="GitHub Repository"
+      >
+        <FaGithub size={22} className="text-gray-800 dark:text-gray-200" />
+      </a>
+    )}
     <div className="aspect-video overflow-hidden">
     <img
         src={project.image}

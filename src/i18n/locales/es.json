@@ -2,24 +2,24 @@
   "navbar": {
     "home": "Inicio",
     "projects": "Proyectos",
-    "about": "Acerca de"
+    "about": "Sobre mí"
   },
   "home": {
     "intro": "Experto en Corporate Performance Management (CPM) convertido en desarrollador de software. Durante 15 años he ayudado a organizaciones a optimizar su rendimiento financiero y operativo mediante estrategias basadas en datos. Ahora aplico esta experiencia para desarrollar potentes soluciones software que impulsan el éxito empresarial."
   },
   "projects": {
-    "title": "Mis Proyectos",
+    "title": "Mis proyectos",
     "subtitle": "Algunos de mis trabajos y proyectos recientes",
     "list": [
       {
         "id": 1,
         "title": "Integración Qlik Sense y Veeva Vault",
-        "description": "Integración automatizada entre Qlik Sense y Veeva Vault usando backend Node.js, frontend web y logs JSON para trazabilidad y monitorización."
+        "description": "Integración automatizada entre Qlik Sense y Veeva Vault utilizando backend Node.js, frontend web y logs JSON para trazabilidad y monitorización."
       },
       {
         "id": 2,
-        "title": "Próximamente...",
-        "description": "Este proyecto está en desarrollo y estará disponible pronto."
+        "title": "FRI€NDS",
+        "description": "Aplicación web para gestionar y compartir gastos entre amigos de forma sencilla y visual. Desarrollada con React, TypeScript y Tailwind CSS."
       }
     ]
   },

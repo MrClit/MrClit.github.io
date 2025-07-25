@@ -18,8 +18,8 @@
       },
       {
         "id": 2,
-        "title": "Pròximament...",
-        "description": "Aquest projecte està en desenvolupament i estarà disponible aviat."
+        "title": "FRI€NDS",
+        "description": "Aplicació web per gestionar i compartir despeses entre amics de manera senzilla i visual. Desenvolupada amb React, TypeScript i Tailwind CSS."
       }
     ]
   },
