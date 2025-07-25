@@ -1,28 +1,42 @@
-# Personal Website & Portfolio 🚧
+# Personal Website & Portfolio 🚀
 
-> **Note:** This is a work in progress
+[![Demo](https://img.shields.io/badge/Live%20Demo-Online-green?style=for-the-badge&logo=vercel)](https://mrclit.github.io)
 
-Welcome to my personal website and professional portfolio! This project showcases my work and expertise as a Data & Analytics Consultant and Software Engineer.
+> **Note:** This project is under active development.
+
+Welcome to my personal website and professional portfolio! Here you'll find a showcase of my work, expertise, and passion as a Data & Analytics Consultant and Software Engineer.
+
+---
+
+## 🌐 Demo
+
+Check out the live site here: [mrclit.github.io](https://mrclit.github.io)
+
+---
 
 ## 🚀 Technologies Used
 
-- ⚡ React 18 with Vite
-- 🎨 Tailwind CSS 4 for styling
-- 🔄 React Router for navigation
-- 🏪 Zustand for state management
+- ⚡ **React 18** with Vite for blazing-fast development
+- 🎨 **Tailwind CSS 4** for modern, responsive styling
+- 🔄 **React Router** for seamless navigation
+- 🏪 **Zustand** for elegant state management
+
+---
 
 ## 🛠️ Getting Started
 
-1. Clone the repository
-2. Install dependencies:
+1. **Clone the repository**
+2. **Install dependencies:**
    ```bash
    npm install
    ```
-3. Start the development server:
+3. **Start the development server:**
    ```bash
    npm run dev
    ```
-4. Open `http://localhost:5173` in your browser
+4. **Open** [`http://localhost:5173`](http://localhost:5173) **in your browser**
+
+---
 
 ## 🏗️ Project Structure
 
@@ -31,13 +45,16 @@ Welcome to my personal website and professional portfolio! This project showcase
 - `src/store` – Global state management with Zustand
 - `public` – Static assets (images, documents)
 
-## 📝 Features (Planned)
+---
+
+## ✨ Features
 
 - Professional portfolio showcasing Data & Analytics projects
-- Technical blog about software engineering and data science
+- Technical blog about software engineering and data science (coming soon)
 - Contact form and professional networking links
 - Responsive design for all devices
+- Multilingual support (English, Spanish, Catalan)
 
-## 📬 Contact
+---
 
-Feel free to reach out for collaborations or just to say hi!
+> Made with ❤️ by Victor Sales

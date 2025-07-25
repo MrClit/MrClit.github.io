@@ -11,8 +11,13 @@ export const projectsData = [
   },
   {
     id: 2,
-    image: "/coming-soon.jpg",
-    url: "#",
-    tags: [],
+    image: "/friends.png",
+    url: "https://mrclit.github.io/friends-web/",
+    repo: "https://github.com/MrClit/friends-web",
+    tags: [
+      { icon: "SiReact", lib: "si", label: "React" },
+      { icon: "SiTypescript", lib: "si", label: "TypeScript" },
+      { icon: "SiTailwindcss", lib: "si", label: "Tailwind CSS" },
+    ],
   },
 ];
