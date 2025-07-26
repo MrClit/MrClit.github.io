@@ -25,6 +25,7 @@
   },
   "about": {
     "title": "About Me",
+    "subtitle": "Always learning, always building.",
     "sections": [
       {
         "title": "Professional Experience",
@@ -52,7 +53,8 @@
         ]
       }
     ],
-    "summary": "I'm passionate about creating digital experiences that not only look great but are also intuitive and accessible to everyone. I believe in technology's power to solve problems and improve people's lives, and I strive to write clean, maintainable, and well-documented code. My approach combines technical excellence with user-centered design to deliver meaningful digital solutions."
+    "summary": "I'm passionate about creating digital experiences that not only look great but are also intuitive and accessible to everyone. I believe in technology's power to solve problems and improve people's lives, and I strive to write clean, maintainable, and well-documented code. My approach combines technical excellence with user-centered design to deliver meaningful digital solutions.",
+    "contactCta": "Contact me"
   },
   "suspense": {
     "loading": "Loading..."
