@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout *)",
+      "Bash(gh issue comment * --body ' *)",
+      "Bash(./scripts/project-status.sh *)",
+      "Bash(gh issue *)"
+    ]
+  }
+}
