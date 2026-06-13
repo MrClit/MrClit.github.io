@@ -52,6 +52,24 @@ feature/N-descripcion ──(PR)──▶ develop ──(PR de release)──▶
 - Mapeo issue ↔ tablero: Backlog = idea capturada · Ready = priorizada · In progress = rama creada ·
   In review = PR abierta · Done = mergeado a `main` y desplegado.
 
+### 🤖 Protocolo de estados (Claude)
+
+Al trabajar una issue, Claude mueve su estado en el tablero usando el script
+`scripts/project-status.sh <issue> "<Status>"` (mover el item del Project v2 requiere la
+API GraphQL; las herramientas MCP de GitHub solo tocan el issue, no el tablero). Disparadores:
+
+1. **Al pedir analizar/planificar una issue** → asegurarse de estar en `develop`
+   (`git switch develop`) y mover la issue a **Ready**. Si durante el análisis se ve necesario
+   refinar el contenido del issue (título/descripción/criterios), editarlo con `gh issue edit`.
+2. **Al aceptar el plan** (salida de plan mode) → mover la issue a **In progress** y crear la
+   rama de trabajo (`feat/N-...`, `fix/N-...`, `chore/N-...`).
+3. **Al abrir la PR** → mover la issue a **In review**.
+4. **Al mergear la PR** → mover la issue a **Done** y añadir un comentario en el issue
+   (`gh issue comment N`) que resuma lo realizado.
+
+> El script necesita `gh` con scope `project` (`gh auth refresh -s project`). Estados válidos:
+> `Backlog | Ready | In progress | In review | Done`.
+
 ## ⚠️ Notas importantes
 
 - **`deploy.yml` usa `pnpm/action-setup` + `pnpm install --frozen-lockfile` + `pnpm run build`.**
