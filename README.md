@@ -28,11 +28,11 @@ Check out the live site here: [mrclit.github.io](https://mrclit.github.io)
 1. **Clone the repository**
 2. **Install dependencies:**
    ```bash
-   npm install
+   pnpm install
    ```
 3. **Start the development server:**
    ```bash
-   npm run dev
+   pnpm dev
    ```
 4. **Open** [`http://localhost:5173`](http://localhost:5173) **in your browser**
 

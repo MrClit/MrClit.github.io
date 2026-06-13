@@ -7,15 +7,15 @@ Portfolio personal de Víctor Sales, publicado en https://mrclit.github.io vía 
 - **React 18** + **TypeScript** (strict) sobre **Vite 5**
 - **Tailwind CSS 4** (plugin `@tailwindcss/vite`)
 - **React Router 7**, **Zustand** (estado), **i18next** (EN/ES/CA), **framer-motion**, **react-icons**
-- Gestor de paquetes: **npm** (migración a pnpm pendiente — ver issue #1)
+- Gestor de paquetes: **pnpm**
 
 ## Comandos
 
 ```bash
-npm install      # instalar dependencias
-npm run dev      # servidor de desarrollo (http://localhost:5173)
-npm run build    # build de producción → dist/
-npm run preview  # previsualizar el build
+pnpm install      # instalar dependencias
+pnpm dev          # servidor de desarrollo (http://localhost:5173)
+pnpm build        # build de producción → dist/
+pnpm preview      # previsualizar el build
 ```
 
 ## Estructura
@@ -54,8 +54,8 @@ feature/N-descripcion ──(PR)──▶ develop ──(PR de release)──▶
 
 ## ⚠️ Notas importantes
 
-- **`deploy.yml` usa `npm ci` + `npm run build`.** Al migrar a pnpm (issue #1) hay que actualizar
-  ese workflow (añadir `pnpm/action-setup`, cambiar a `pnpm install --frozen-lockfile`) o el deploy fallará.
+- **`deploy.yml` usa `pnpm/action-setup` + `pnpm install --frozen-lockfile` + `pnpm run build`.**
+  El campo `packageManager` de `package.json` fija la versión de pnpm que usa CI.
 - `dist/` y `node_modules/` están en `.gitignore`; el build se genera en CI, no se commitea.
 - Las automatizaciones del tablero (Item added → Backlog, Item closed → Done) se configuran solo
   desde la web (la API de GitHub no permite activarlas): https://github.com/users/MrClit/projects/3/workflows
