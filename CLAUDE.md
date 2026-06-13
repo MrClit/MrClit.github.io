@@ -70,6 +70,32 @@ API GraphQL; las herramientas MCP de GitHub solo tocan el issue, no el tablero).
 > El script necesita `gh` con scope `project` (`gh auth refresh -s project`). Estados válidos:
 > `Backlog | Ready | In progress | In review | Done`.
 
+## Protocolo de releases (`develop → main`)
+
+Cada merge a `main` es un **release** y dispara el deploy a producción. Versionado
+**SemVer** (`vMAJOR.MINOR.PATCH`), empezando en `v1.0.0`. Se mergea con **merge commit**
+(no squash) para conservar el historial de PRs.
+
+Decidir el bump según lo incluido desde el último tag:
+`MAJOR` = rediseño/cambio incompatible · `MINOR` = nueva feature/sección ·
+`PATCH` = fix, copy, ajuste menor.
+
+**Pasos:**
+
+1. **Preparar en `develop`** — `git switch develop && git pull`. Verificar build limpio:
+   `pnpm install --frozen-lockfile && pnpm build`, y revisión visual con `pnpm preview`.
+2. **Bump de versión** — actualizar `"version"` en `package.json` y commit
+   `chore(release): vX.Y.Z` en `develop`.
+3. **PR de release** — `gh pr create --base main --head develop --title "release: vX.Y.Z"`,
+   con el cuerpo listando los cambios (PRs/issues) desde el tag anterior.
+4. **Mergear** — `gh pr merge --merge` (merge commit, sin borrar `develop`).
+5. **Tag + GitHub Release** — sobre `main`:
+   `git switch main && git pull && git tag vX.Y.Z && git push origin vX.Y.Z`, y
+   `gh release create vX.Y.Z --title "vX.Y.Z" --notes "..."`.
+6. **Verificar deploy** — esperar a `deploy.yml` (`gh run watch`) y comprobar
+   https://mrclit.github.io en vivo.
+7. **Volver a `develop`** — `git switch develop` para seguir trabajando.
+
 ## ⚠️ Notas importantes
 
 - **`deploy.yml` usa `pnpm/action-setup` + `pnpm install --frozen-lockfile` + `pnpm run build`.**
