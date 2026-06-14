@@ -21,7 +21,7 @@ const Home: React.FC = () => {
           <source srcSet="/avatar.webp" type="image/webp" />
           <img
             src="/avatar.jpeg"
-            alt="Foto de perfil"
+            alt={t('home.avatarAlt')}
             width={427}
             height={640}
             fetchPriority="high"

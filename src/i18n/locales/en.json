@@ -5,7 +5,8 @@
     "about": "About"
   },
   "home": {
-    "intro": "Corporate Performance Management (CPM) expert turned Software Developer. For 15 years, I've helped organizations optimize their financial and operational performance through data-driven strategies. Now, I'm applying this expertise to develop powerful software solutions that drive business success."
+    "intro": "Corporate Performance Management (CPM) expert turned Software Developer. For 15 years, I've helped organizations optimize their financial and operational performance through data-driven strategies. Now, I'm applying this expertise to develop powerful software solutions that drive business success.",
+    "avatarAlt": "Photo of Víctor Sales Barberà"
   },
   "projects": {
     "title": "My Projects",
@@ -53,7 +54,8 @@
         ]
       }
     ],
-    "contactCta": "Contact me"
+    "contactCta": "Contact me",
+    "avatarAlt": "Portrait of Víctor Sales Barberà"
   },
   "suspense": {
     "loading": "Loading..."

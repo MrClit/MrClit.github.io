@@ -5,7 +5,8 @@
     "about": "Sobre mí"
   },
   "home": {
-    "intro": "Experto en Corporate Performance Management (CPM) convertido en desarrollador de software. Durante 15 años he ayudado a organizaciones a optimizar su rendimiento financiero y operativo mediante estrategias basadas en datos. Ahora aplico esta experiencia para desarrollar potentes soluciones software que impulsan el éxito empresarial."
+    "intro": "Experto en Corporate Performance Management (CPM) convertido en desarrollador de software. Durante 15 años he ayudado a organizaciones a optimizar su rendimiento financiero y operativo mediante estrategias basadas en datos. Ahora aplico esta experiencia para desarrollar potentes soluciones software que impulsan el éxito empresarial.",
+    "avatarAlt": "Foto de Víctor Sales Barberà"
   },
   "projects": {
     "title": "Mis proyectos",
@@ -53,7 +54,8 @@
         ]
       }
     ],
-    "contactCta": "Contáctame"
+    "contactCta": "Contáctame",
+    "avatarAlt": "Retrato de Víctor Sales Barberà"
   },
   "suspense": {
     "loading": "Cargando..."
