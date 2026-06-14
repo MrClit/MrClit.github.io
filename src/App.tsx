@@ -1,6 +1,5 @@
-import React, { Suspense, lazy } from "react";
+import { Suspense, lazy, useEffect, type ReactNode } from "react";
 import { Routes, Route } from "react-router-dom";
-import { useEffect } from 'react';
 import NavBar from "./components/NavBar";
 import useThemeStore from "./store/useThemeStore";
 import './i18n';
@@ -12,7 +11,7 @@ const Projects = lazy(() => import("./pages/Projects"));
 const About = lazy(() => import("./pages/About"));
 
 // Component to handle the theme
-const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
+const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const { theme } = useThemeStore();
 
   useEffect(() => {
