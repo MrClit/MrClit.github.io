@@ -23,7 +23,12 @@ const ThemeProvider = ({ children }: { children: ReactNode }) => {
 };
 
 function App() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  // Keep <html lang> in sync with the active i18next language
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
 
   return (
     <ThemeProvider>
