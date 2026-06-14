@@ -55,21 +55,27 @@ const NavBar: React.FC = () => {
           >
             <NavLink
               to="/"
-              className={({ isActive }) => `${getNavLinkClass(isActive)} w-2/3 max-w-xs text-center`}
+              className={({ isActive }) =>
+                `${getNavLinkClass(isActive)} w-2/3 max-w-xs text-center`
+              }
               onClick={() => setMenuOpen(false)}
             >
               {t('navbar.home')}
             </NavLink>
             <NavLink
               to="/projects"
-              className={({ isActive }) => `${getNavLinkClass(isActive)} w-2/3 max-w-xs text-center`}
+              className={({ isActive }) =>
+                `${getNavLinkClass(isActive)} w-2/3 max-w-xs text-center`
+              }
               onClick={() => setMenuOpen(false)}
             >
               {t('navbar.projects')}
             </NavLink>
             <NavLink
               to="/about"
-              className={({ isActive }) => `${getNavLinkClass(isActive)} w-2/3 max-w-xs text-center`}
+              className={({ isActive }) =>
+                `${getNavLinkClass(isActive)} w-2/3 max-w-xs text-center`
+              }
               onClick={() => setMenuOpen(false)}
             >
               {t('navbar.about')}

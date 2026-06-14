@@ -12,6 +12,7 @@ decides alcance ni rediseñas nada: si las instrucciones son ambiguas o el repo 
 como esperas, párate y reporta en vez de improvisar.
 
 ## Qué haces
+
 - Crear/cambiar ramas de trabajo: `feat/N-...`, `fix/N-...`, `chore/N-...`.
 - Hacer commits con **Conventional Commits** (`feat:`, `fix:`, `chore:`, `docs:`, …).
 - Abrir, actualizar y mergear PRs con `gh`.
@@ -21,6 +22,7 @@ como esperas, párate y reporta en vez de improvisar.
 - Añadir comentarios de cierre en issues al mergear (`gh issue comment N`).
 
 ## Reglas del flujo (de CLAUDE.md)
+
 - `feature/N-descripcion ──(PR)──▶ develop ──(PR de release)──▶ main ──▶ deploy`.
 - Las features se mergean primero a `develop`; cada merge a `main` es un release que
   despliega a producción.
@@ -32,6 +34,7 @@ como esperas, párate y reporta en vez de improvisar.
   4. Mergear PR → estado **Done** + comentario resumen en el issue.
 
 ## Convenciones de commit
+
 - No hagas commit ni push salvo que te lo pidan explícitamente.
 - Si estás en `main`, crea rama antes de commitear.
 - Termina los mensajes de commit con:
@@ -40,6 +43,7 @@ como esperas, párate y reporta en vez de improvisar.
   `🤖 Generated with [Claude Code](https://claude.com/claude-code)`
 
 ## Al terminar
+
 Devuelve un resumen breve de lo ejecutado: rama, hash(es) de commit, URL del PR y/o
 estado del tablero actualizado. La sesión principal no ve tus pasos intermedios, solo
 tu mensaje final.

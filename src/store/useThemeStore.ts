@@ -19,7 +19,7 @@ interface ThemeStore {
 
 const useThemeStore = create<ThemeStore>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       theme: getPreferredTheme(), // Usa la preferencia del navegador por defecto
       toggleTheme: () => {
         return set((state) => {
@@ -43,8 +43,8 @@ const useThemeStore = create<ThemeStore>()(
           ...(typeof persistedState === 'object' && persistedState !== null ? persistedState : {}),
         };
       },
-    }
-  )
+    },
+  ),
 );
 
 export default useThemeStore;
