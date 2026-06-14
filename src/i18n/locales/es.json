@@ -11,18 +11,16 @@
   "projects": {
     "title": "Mis proyectos",
     "subtitle": "Algunos de mis trabajos y proyectos recientes",
-    "list": [
-      {
-        "id": 1,
+    "items": {
+      "otsuka": {
         "title": "Integración Qlik Sense y Veeva Vault",
         "description": "Integración automatizada entre Qlik Sense y Veeva Vault utilizando backend Node.js, frontend web y logs JSON para trazabilidad y monitorización."
       },
-      {
-        "id": 2,
+      "friends": {
         "title": "FRI€NDS",
         "description": "Aplicación web para gestionar y compartir gastos entre amigos de forma sencilla y visual. Desarrollada con React, TypeScript y Tailwind CSS."
       }
-    ]
+    }
   },
   "about": {
     "title": "Sobre mí",
