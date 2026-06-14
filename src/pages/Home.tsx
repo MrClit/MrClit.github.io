@@ -52,7 +52,7 @@ const Home: React.FC = () => {
             href="https://github.com/MrClit"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-200 dark:hover:text-purple-300 transition-colors duration-200"
+            className="hover:text-indigo-600 dark:hover:text-purple-300 transition-colors duration-200"
             aria-label="GitHub"
           >
             <FaGithub size={28} />
@@ -61,14 +61,14 @@ const Home: React.FC = () => {
             href="https://linkedin.com/in/vsales"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-200 dark:hover:text-purple-300 transition-colors duration-200"
+            className="hover:text-indigo-600 dark:hover:text-purple-300 transition-colors duration-200"
             aria-label="LinkedIn"
           >
             <FaLinkedin size={28} />
           </a>
           <a
             href="mailto:victor.sales83@gmail.com"
-            className="hover:text-indigo-200 dark:hover:text-purple-300 transition-colors duration-200"
+            className="hover:text-indigo-600 dark:hover:text-purple-300 transition-colors duration-200"
             aria-label="Send email"
           >
             <FaEnvelope size={28} />
