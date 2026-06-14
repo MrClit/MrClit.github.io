@@ -53,7 +53,7 @@ const NavBar: React.FC = () => {
       {/* Menú móvil desplegable */}
       {menuOpen && (
         <div
-          className={`absolute top-full left-0 w-2/3 flex flex-col items-center gap-2 bg-white/90 dark:bg-gray-900/95 py-4 shadow-md md:hidden z-50 transition-transform transition-opacity duration-500 ease-out
+          className={`absolute top-full left-0 w-2/3 flex flex-col items-center gap-2 bg-white/90 dark:bg-gray-900/95 py-4 shadow-md md:hidden z-50 transition-transform duration-500 ease-out
             ${menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-12'}
           `}
           style={{ pointerEvents: menuOpen ? 'auto' : 'none' }}
