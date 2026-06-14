@@ -23,7 +23,7 @@ const About: React.FC = () => {
           <source srcSet="/avatar-face.webp" type="image/webp" />
           <motion.img
             src="/avatar-face.jpeg"
-            alt="Avatar"
+            alt={t('about.avatarAlt')}
             width={128}
             height={128}
             className="w-32 h-32 rounded-full shadow-xl border-4 border-indigo-400 dark:border-indigo-600 mb-4 bg-white object-cover"

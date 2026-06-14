@@ -12,7 +12,9 @@
       "Bash(git commit -m ' *)",
       "Bash(git -C /Users/victor/Projects/MrClit.github.io status)",
       "Bash(git pull *)",
-      "Bash(git switch *)"
+      "Bash(git switch *)",
+      "Bash(git -C /Users/victor/Projects/MrClit.github.io switch *)",
+      "Bash(git -C /Users/victor/Projects/MrClit.github.io pull)"
     ]
   }
 }

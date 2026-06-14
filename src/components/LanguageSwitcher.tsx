@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { useTranslation } from "react-i18next";
+import useDismiss from "../hooks/useDismiss";
 
 const languages = [
     { code: "en", label: "EN", flag: "🇬🇧" },
@@ -11,9 +12,13 @@ const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
   const currentLang = i18n.language;
   const [open, setOpen] = useState(false);
+  const ref = useDismiss<HTMLDivElement>(
+    open,
+    useCallback(() => setOpen(false), []),
+  );
 
   return (
-    <div className="relative">
+    <div className="relative" ref={ref}>
       <button
         onClick={() => setOpen((prev) => !prev)}
         className="px-2 py-2 rounded text-xs font-semibold 
