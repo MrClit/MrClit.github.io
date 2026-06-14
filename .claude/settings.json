@@ -4,7 +4,9 @@
       "Bash(git checkout *)",
       "Bash(gh issue comment * --body ' *)",
       "Bash(./scripts/project-status.sh *)",
-      "Bash(gh issue *)"
+      "Bash(gh issue *)",
+      "Bash(gh pr *)",
+      "Bash(/Users/victor/Projects/MrClit.github.io/scripts/project-status.sh *)"
     ]
   }
 }
