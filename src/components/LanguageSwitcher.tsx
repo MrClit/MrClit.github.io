@@ -1,11 +1,11 @@
-import React, { useCallback, useState } from "react";
-import { useTranslation } from "react-i18next";
-import useDismiss from "../hooks/useDismiss";
+import React, { useCallback, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import useDismiss from '../hooks/useDismiss';
 
 const languages = [
-    { code: "en", label: "EN", flag: "🇬🇧" },
-    { code: "es", label: "ES", flag: "🇪🇸" },
-    { code: "ca", label: "CA", flag: "🇦🇩" },
+  { code: 'en', label: 'EN', flag: '🇬🇧' },
+  { code: 'es', label: 'ES', flag: '🇪🇸' },
+  { code: 'ca', label: 'CA', flag: '🇦🇩' },
 ];
 
 const LanguageSwitcher: React.FC = () => {
@@ -33,8 +33,7 @@ const LanguageSwitcher: React.FC = () => {
       >
         <span>{languages.find((l) => l.code === currentLang)?.flag}</span>
         <span>
-          {languages.find((l) => l.code === currentLang)?.label ||
-            currentLang.toUpperCase()}
+          {languages.find((l) => l.code === currentLang)?.label || currentLang.toUpperCase()}
         </span>
         <span className="ml-1">▼</span>
       </button>
@@ -56,8 +55,8 @@ const LanguageSwitcher: React.FC = () => {
                 className={`w-full flex items-center gap-2 text-left px-3 py-1 text-xs font-semibold rounded transition-colors duration-200 focus:outline-none
                   ${
                     currentLang === lang.code
-                      ? "bg-indigo-600 text-white"
-                      : "hover:bg-indigo-100 dark:hover:bg-indigo-700 text-gray-800 dark:text-gray-200"
+                      ? 'bg-indigo-600 text-white'
+                      : 'hover:bg-indigo-100 dark:hover:bg-indigo-700 text-gray-800 dark:text-gray-200'
                   }
                 `}
                 role="option"

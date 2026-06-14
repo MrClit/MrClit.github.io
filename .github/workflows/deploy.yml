@@ -5,10 +5,10 @@ on:
     branches:
       - main
 
-permissions:  # Permisos globales para todo el workflow
+permissions: # Permisos globales para todo el workflow
   contents: read
   pages: write
-  id-token: write  # Permiso crítico para OIDC
+  id-token: write # Permiso crítico para OIDC
 
 jobs:
   build:
@@ -28,6 +28,12 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm run typecheck
+
+      - name: Lint
+        run: pnpm run lint
 
       - name: Build project
         run: pnpm run build
