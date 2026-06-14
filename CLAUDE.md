@@ -4,10 +4,10 @@ Portfolio personal de Víctor Sales, publicado en https://mrclit.github.io vía 
 
 ## Stack
 
-- **React 18** + **TypeScript** (strict) sobre **Vite 5**
+- **React 19** + **TypeScript 6** (strict) sobre **Vite 8**
 - **Tailwind CSS 4** (plugin `@tailwindcss/vite`)
-- **React Router 7**, **Zustand** (estado), **i18next** (EN/ES/CA), **framer-motion**, **react-icons**
-- Gestor de paquetes: **pnpm**
+- **React Router 7**, **Zustand 5** (estado), **i18next 26** (EN/ES/CA), **framer-motion 12**, **react-icons**
+- Gestor de paquetes: **pnpm** (`pnpm@10`), **Node ≥ 24** (fijado en `.nvmrc` y `engines`)
 
 ## Comandos
 
