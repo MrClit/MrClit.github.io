@@ -96,6 +96,20 @@ Decidir el bump según lo incluido desde el último tag:
    https://mrclit.github.io en vivo.
 7. **Volver a `develop`** — `git switch develop` para seguir trabajando.
 
+## Modelos por tipo de trabajo
+
+Para optimizar coste y razonamiento, el trabajo se reparte por modelo:
+
+- **Análisis, planificación y generación de código → sesión principal (Opus).**
+  Es donde el razonamiento importa; se hace directamente en la conversación.
+- **Operaciones mecánicas de git/GitHub → subagente `gestor-git` (Sonnet).**
+  Delegar **siempre** en él (vía la tool `Agent`) los commits, ramas, PRs, gestión de
+  issues y movimientos del tablero, en vez de ejecutarlos en la sesión principal.
+  Definido en `.claude/agents/gestor-git.md` con `model: sonnet`.
+
+> El subagente arranca en frío (sin el contexto de la conversación): hay que pasarle
+> instrucciones autocontenidas (qué commitear, mensaje, nº de issue, base/head del PR…).
+
 ## ⚠️ Notas importantes
 
 - **`deploy.yml` usa `pnpm/action-setup` + `pnpm install --frozen-lockfile` + `pnpm run build`.**
