@@ -9,10 +9,10 @@ const About: React.FC = () => {
   }>;
 
   return (
-    <div className="relative min-h-screen py-24 px-4 sm:px-6 lg:px-8 overflow-x-hidden bg-gradient-to-br from-indigo-200 via-white to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-indigo-900">
+    <div className="relative min-h-screen py-24 px-4 sm:px-6 lg:px-8 overflow-x-hidden bg-linear-to-br from-indigo-200 via-white to-indigo-100 dark:from-gray-900 dark:via-gray-800 dark:to-indigo-900">
       {/* Fondo decorativo animado */}
       <motion.div
-        className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-indigo-300/30 dark:bg-indigo-900/30 blur-3xl z-0 animate-pulse"
+        className="absolute -top-32 -left-32 w-125 h-125 rounded-full bg-indigo-300/30 dark:bg-indigo-900/30 blur-3xl z-0 animate-pulse"
         animate={{ scale: [1, 1.1, 1] }}
         transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
       />
@@ -82,7 +82,7 @@ const About: React.FC = () => {
             whileHover={{ scale: 1.03, boxShadow: '0 8px 32px 0 rgba(99,102,241,0.15)' }}
           >
             <h2 className="text-2xl font-bold mb-4 text-indigo-700 dark:text-indigo-300 flex items-center gap-3">
-              <span className="inline-block w-4 h-4 rounded-full bg-gradient-to-br from-indigo-400 to-indigo-600 dark:from-indigo-500 dark:to-indigo-300 animate-pulse"></span>
+              <span className="inline-block w-4 h-4 rounded-full bg-linear-to-br from-indigo-400 to-indigo-600 dark:from-indigo-500 dark:to-indigo-300 animate-pulse"></span>
               {section.title}
             </h2>
             <ul className="space-y-3 pl-5">
