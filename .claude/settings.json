@@ -9,7 +9,10 @@
       "Bash(/Users/victor/Projects/MrClit.github.io/scripts/project-status.sh *)",
       "mcp__github__get_issue",
       "Bash(bash scripts/project-status.sh *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git -C /Users/victor/Projects/MrClit.github.io status)",
+      "Bash(git pull *)",
+      "Bash(git switch *)"
     ]
   }
 }
