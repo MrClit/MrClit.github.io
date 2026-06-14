@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="light">
+<html lang="es">
   <head>
     <!-- Restaura la ruta codificada por 404.html (truco SPA de GitHub Pages).
          Debe ejecutarse antes de que arranque el router. -->
@@ -13,6 +13,25 @@
         }
       })(window.location);
     </script>
+
+    <!-- Aplica el tema antes del primer paint para evitar el flash (FOUC).
+         Lee el tema persistido por Zustand (localStorage 'theme-storage') o,
+         si no hay valor, la preferencia del sistema (prefers-color-scheme). -->
+    <script type="text/javascript">
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme-storage');
+          var theme = stored ? JSON.parse(stored).state.theme : null;
+          if (theme !== 'light' && theme !== 'dark') {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.className = theme;
+        } catch (e) {
+          document.documentElement.className = 'light';
+        }
+      })();
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
