@@ -1,6 +1,8 @@
-export const projectsData = [
+import type { ProjectData } from './types';
+
+export const projectsData: ProjectData[] = [
   {
-    id: 1,
+    key: 'otsuka',
     image: '/Otsuka.png',
     url: '#',
     tags: [
@@ -10,7 +12,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 2,
+    key: 'friends',
     image: '/friends.png',
     url: 'https://mrclit.github.io/friends-web/',
     repo: 'https://github.com/MrClit/friends-web',
