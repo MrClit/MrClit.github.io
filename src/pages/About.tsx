@@ -18,14 +18,20 @@ const About: React.FC = () => {
       />
       {/* Hero con avatar y nombre */}
       <div className="relative z-10 flex flex-col items-center mb-16">
-        <motion.img
-          src="/avatar-face.jpeg"
-          alt="Avatar"
-          className="w-32 h-32 rounded-full shadow-xl border-4 border-indigo-400 dark:border-indigo-600 mb-4 bg-white object-cover"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7 }}
-        />
+        <picture>
+          <source srcSet="/avatar-face.avif" type="image/avif" />
+          <source srcSet="/avatar-face.webp" type="image/webp" />
+          <motion.img
+            src="/avatar-face.jpeg"
+            alt="Avatar"
+            width={128}
+            height={128}
+            className="w-32 h-32 rounded-full shadow-xl border-4 border-indigo-400 dark:border-indigo-600 mb-4 bg-white object-cover"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7 }}
+          />
+        </picture>
         <motion.h1
           className="text-4xl font-extrabold text-indigo-800 dark:text-indigo-300 text-center mb-2 drop-shadow"
           initial={{ opacity: 0, y: -20 }}

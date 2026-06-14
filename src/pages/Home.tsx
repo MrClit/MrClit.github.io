@@ -16,14 +16,21 @@ const Home: React.FC = () => {
         transition={{ type: 'spring', stiffness: 260, damping: 20 }}
         className="w-full flex justify-center md:w-auto"
       >
-        <img
-          src="/avatar.jpeg"
-          alt="Foto de perfil"
-          className="w-auto h-64 md:w-auto md:h-80 rounded-xl object-contain shadow-xl 
-          border-4 border-indigo-400 dark:border-purple-500
-          transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl
-          hover:border-indigo-500 dark:hover:border-purple-400"
-        />
+        <picture>
+          <source srcSet="/avatar.avif" type="image/avif" />
+          <source srcSet="/avatar.webp" type="image/webp" />
+          <img
+            src="/avatar.jpeg"
+            alt="Foto de perfil"
+            width={427}
+            height={640}
+            fetchPriority="high"
+            className="w-auto h-64 md:w-auto md:h-80 rounded-xl object-contain shadow-xl
+            border-4 border-indigo-400 dark:border-purple-500
+            transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl
+            hover:border-indigo-500 dark:hover:border-purple-400"
+          />
+        </picture>
       </motion.div>
       <div className="text-center md:text-left max-w-2xl">
         <motion.h1
