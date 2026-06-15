@@ -11,6 +11,7 @@
   "projects": {
     "title": "Els meus projectes",
     "subtitle": "Alguns dels meus treballs i projectes recents",
+    "comingSoon": "Pròximament",
     "items": {
       "otsuka": {
         "title": "Integració Qlik Sense i Veeva Vault",
