@@ -22,4 +22,15 @@ export const projectsData: ProjectData[] = [
       { icon: 'SiTailwindcss', lib: 'si', label: 'Tailwind CSS' },
     ],
   },
+  {
+    key: 'finapp',
+    image: '/FinApp.png',
+    url: 'https://fin-app-tawny.vercel.app',
+    repo: 'https://github.com/MrClit/fin-app',
+    tags: [
+      { icon: 'SiNextdotjs', lib: 'si', label: 'Next.js' },
+      { icon: 'SiSupabase', lib: 'si', label: 'Supabase' },
+      { icon: 'SiTailwindcss', lib: 'si', label: 'Tailwind CSS' },
+    ],
+  },
 ];
