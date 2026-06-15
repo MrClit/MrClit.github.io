@@ -2,16 +2,6 @@ import type { ProjectData } from './types';
 
 export const projectsData: ProjectData[] = [
   {
-    key: 'otsuka',
-    image: '/Otsuka.png',
-    url: '#',
-    tags: [
-      { icon: 'SiNodedotjs', lib: 'si', label: 'Node.js' },
-      { icon: 'SiJavascript', lib: 'si', label: 'JavaScript' },
-      { icon: 'SiCss3', lib: 'si', label: 'CSS' },
-    ],
-  },
-  {
     key: 'friends',
     image: '/friends.png',
     url: 'https://mrclit.github.io/friends-web/',
