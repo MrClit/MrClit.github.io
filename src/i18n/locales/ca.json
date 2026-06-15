@@ -13,13 +13,13 @@
     "subtitle": "Alguns dels meus treballs i projectes recents",
     "comingSoon": "Pròximament",
     "items": {
-      "otsuka": {
-        "title": "Integració Qlik Sense i Veeva Vault",
-        "description": "Integració automatitzada entre Qlik Sense i Veeva Vault utilitzant backend Node.js, frontend web i logs JSON per a traçabilitat i monitoratge."
-      },
       "friends": {
         "title": "FRI€NDS",
         "description": "Aplicació web per gestionar i compartir despeses entre amics de manera senzilla i visual. Desenvolupada amb React, TypeScript i Tailwind CSS."
+      },
+      "finapp": {
+        "title": "FinApp",
+        "description": "Aplicació web personal per gestionar i analitzar finances. Agrega comptes bancaris mitjançant l'API d'Enable Banking i utilitza web scraping per a fonts sense API pública, amb categorització de moviments i gràfics."
       }
     }
   },
