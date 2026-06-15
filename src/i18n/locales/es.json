@@ -23,7 +23,7 @@
       },
       "finapp": {
         "title": "FinApp",
-        "description": "Aplicación web personal para gestionar y analizar finanzas: agregación de cuentas bancarias, categorización de movimientos y gráficos. Desarrollada con Next.js, Supabase y Tailwind CSS."
+        "description": "Aplicación web personal para gestionar y analizar finanzas. Agrega cuentas bancarias mediante la API de Enable Banking y usa web scraping para fuentes sin API pública, con categorización de movimientos y gráficos."
       }
     }
   },

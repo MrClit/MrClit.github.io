@@ -29,7 +29,6 @@ export const projectsData: ProjectData[] = [
     repo: 'https://github.com/MrClit/fin-app',
     tags: [
       { icon: 'SiNextdotjs', lib: 'si', label: 'Next.js' },
-      { icon: 'SiTypescript', lib: 'si', label: 'TypeScript' },
       { icon: 'SiSupabase', lib: 'si', label: 'Supabase' },
       { icon: 'SiTailwindcss', lib: 'si', label: 'Tailwind CSS' },
     ],
