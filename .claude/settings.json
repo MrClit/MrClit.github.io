@@ -14,7 +14,11 @@
       "Bash(git pull *)",
       "Bash(git switch *)",
       "Bash(git -C /Users/victor/Projects/MrClit.github.io switch *)",
-      "Bash(git -C /Users/victor/Projects/MrClit.github.io pull)"
+      "Bash(git -C /Users/victor/Projects/MrClit.github.io pull)",
+      "Bash(pnpm typecheck *)",
+      "Bash(pnpm lint *)",
+      "Bash(pnpm format:check)",
+      "Bash(pnpm build *)"
     ]
   }
 }

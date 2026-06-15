@@ -11,6 +11,7 @@
   "projects": {
     "title": "My Projects",
     "subtitle": "Some of my recent work and projects",
+    "comingSoon": "Coming soon",
     "items": {
       "otsuka": {
         "title": "Qlik Sense & Veeva Vault Integration",
