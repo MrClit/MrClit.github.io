@@ -20,6 +20,10 @@
       "friends": {
         "title": "FRI€NDS",
         "description": "Aplicación web para gestionar y compartir gastos entre amigos de forma sencilla y visual. Desarrollada con React, TypeScript y Tailwind CSS."
+      },
+      "finapp": {
+        "title": "FinApp",
+        "description": "Aplicación web personal para gestionar y analizar finanzas: agregación de cuentas bancarias, categorización de movimientos y gráficos. Desarrollada con Next.js, Supabase y Tailwind CSS."
       }
     }
   },

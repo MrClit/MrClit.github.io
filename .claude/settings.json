@@ -18,7 +18,8 @@
       "Bash(pnpm typecheck *)",
       "Bash(pnpm lint *)",
       "Bash(pnpm format:check)",
-      "Bash(pnpm build *)"
+      "Bash(pnpm build *)",
+      "Bash(bash /Users/victor/Projects/MrClit.github.io/scripts/project-status.sh * *)"
     ]
   }
 }
