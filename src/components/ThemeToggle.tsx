@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import useThemeStore from '../store/useThemeStore';
 
 const ThemeToggle = () => {

@@ -4,7 +4,21 @@
       "Bash(git checkout *)",
       "Bash(gh issue comment * --body ' *)",
       "Bash(./scripts/project-status.sh *)",
-      "Bash(gh issue *)"
+      "Bash(gh issue *)",
+      "Bash(gh pr *)",
+      "Bash(/Users/victor/Projects/MrClit.github.io/scripts/project-status.sh *)",
+      "mcp__github__get_issue",
+      "Bash(bash scripts/project-status.sh *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git -C /Users/victor/Projects/MrClit.github.io status)",
+      "Bash(git pull *)",
+      "Bash(git switch *)",
+      "Bash(git -C /Users/victor/Projects/MrClit.github.io switch *)",
+      "Bash(git -C /Users/victor/Projects/MrClit.github.io pull)",
+      "Bash(pnpm typecheck *)",
+      "Bash(pnpm lint *)",
+      "Bash(pnpm format:check)",
+      "Bash(pnpm build *)"
     ]
   }
 }

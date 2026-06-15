@@ -5,23 +5,23 @@
     "about": "Sobre mí"
   },
   "home": {
-    "intro": "Experto en Corporate Performance Management (CPM) convertido en desarrollador de software. Durante 15 años he ayudado a organizaciones a optimizar su rendimiento financiero y operativo mediante estrategias basadas en datos. Ahora aplico esta experiencia para desarrollar potentes soluciones software que impulsan el éxito empresarial."
+    "intro": "Experto en Corporate Performance Management (CPM) convertido en desarrollador de software. Durante 15 años he ayudado a organizaciones a optimizar su rendimiento financiero y operativo mediante estrategias basadas en datos. Ahora aplico esta experiencia para desarrollar potentes soluciones software que impulsan el éxito empresarial.",
+    "avatarAlt": "Foto de Víctor Sales Barberà"
   },
   "projects": {
     "title": "Mis proyectos",
     "subtitle": "Algunos de mis trabajos y proyectos recientes",
-    "list": [
-      {
-        "id": 1,
+    "comingSoon": "Próximamente",
+    "items": {
+      "otsuka": {
         "title": "Integración Qlik Sense y Veeva Vault",
         "description": "Integración automatizada entre Qlik Sense y Veeva Vault utilizando backend Node.js, frontend web y logs JSON para trazabilidad y monitorización."
       },
-      {
-        "id": 2,
+      "friends": {
         "title": "FRI€NDS",
         "description": "Aplicación web para gestionar y compartir gastos entre amigos de forma sencilla y visual. Desarrollada con React, TypeScript y Tailwind CSS."
       }
-    ]
+    }
   },
   "about": {
     "title": "Sobre mí",
@@ -53,8 +53,8 @@
         ]
       }
     ],
-    "summary": "Me apasiona crear experiencias digitales que no solo se vean bien, sino que también sean intuitivas y accesibles para todos. Creo en el poder de la tecnología para resolver problemas y mejorar la vida de las personas, y me esfuerzo por escribir código limpio, mantenible y bien documentado. Mi enfoque combina la excelencia técnica con el diseño centrado en el usuario para ofrecer soluciones digitales significativas.",
-    "contactCta": "Contáctame"
+    "contactCta": "Contáctame",
+    "avatarAlt": "Retrato de Víctor Sales Barberà"
   },
   "suspense": {
     "loading": "Cargando..."

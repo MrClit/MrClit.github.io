@@ -4,10 +4,10 @@ Portfolio personal de Víctor Sales, publicado en https://mrclit.github.io vía 
 
 ## Stack
 
-- **React 18** + **TypeScript** (strict) sobre **Vite 5**
+- **React 19** + **TypeScript 6** (strict) sobre **Vite 8**
 - **Tailwind CSS 4** (plugin `@tailwindcss/vite`)
-- **React Router 7**, **Zustand** (estado), **i18next** (EN/ES/CA), **framer-motion**, **react-icons**
-- Gestor de paquetes: **pnpm**
+- **React Router 7**, **Zustand 5** (estado), **i18next 26** (EN/ES/CA), **framer-motion 12**, **react-icons**
+- Gestor de paquetes: **pnpm** (`pnpm@10`), **Node ≥ 24** (fijado en `.nvmrc` y `engines`)
 
 ## Comandos
 
@@ -95,6 +95,20 @@ Decidir el bump según lo incluido desde el último tag:
 6. **Verificar deploy** — esperar a `deploy.yml` (`gh run watch`) y comprobar
    https://mrclit.github.io en vivo.
 7. **Volver a `develop`** — `git switch develop` para seguir trabajando.
+
+## Modelos por tipo de trabajo
+
+Para optimizar coste y razonamiento, el trabajo se reparte por modelo:
+
+- **Análisis, planificación y generación de código → sesión principal (Opus).**
+  Es donde el razonamiento importa; se hace directamente en la conversación.
+- **Operaciones mecánicas de git/GitHub → subagente `gestor-git` (Sonnet).**
+  Delegar **siempre** en él (vía la tool `Agent`) los commits, ramas, PRs, gestión de
+  issues y movimientos del tablero, en vez de ejecutarlos en la sesión principal.
+  Definido en `.claude/agents/gestor-git.md` con `model: sonnet`.
+
+> El subagente arranca en frío (sin el contexto de la conversación): hay que pasarle
+> instrucciones autocontenidas (qué commitear, mensaje, nº de issue, base/head del PR…).
 
 ## ⚠️ Notas importantes
 
